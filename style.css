@@ -1,0 +1,100 @@
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,61,196,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+button {
+    background-color: rgba(255, 255, 255, .125);
+    border: 1px solid rgba(255, 255, 255, .125);
+    color: rgba(255, 255, 255, .675);
+    cursor: pointer;
+    font-size: 2em;
+    outline: none;
+    
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, 1);
+  }
+
+h1{
+    text-align:center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3em;
+
+}
+
+
+
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align:center;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 0.75em 0.75em; 
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    
+}
+
+#display-bar{
+    display:flex;
+    flex-direction: column;
+    height: 75px;
+    justify-content: space-between;
+    border-radius: 0.75em 0.75em 0 0;
+    padding: 10px;
+    background-color:rgba(233, 150, 122, .35);
+    color: rgba(255, 255, 255, 1);
+
+
+}
+
+#equation{
+    color: rgba(255, 255, 255, .5);
+    font-size: 1em;
+    text-align: right;
+}
+
+#currentDisplay{
+    font-size: 2em;
+    text-align:right;
+}
+
+.keys{
+    width: auto;
+    display:grid;
+    border-radius: 0.75em;
+
+    grid-template-columns: repeat(5, 120px);
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas: 
+        "sevenbtn eightbtn ninebtn deletebtn clearbtn" 
+        "fourbtn fivebtn sixbtn addbtn subtractionbtn"
+        "onebtn twobtn threebtn multiplybtn divisionbtn"
+        "zerobtn zerobtn decimalbtn equalbtn equalbtn";
+}
+
+#zerobtn{ grid-area: zerobtn; }
+#onebtn{ grid-area: onebtn; }
+#twobtn{ grid-area: twobtn; }
+#threebtn{ grid-area: threebtn; }
+#fourbtn{ grid-area: fourbtn; }
+#fivebtn{ grid-area: fivebtn; }
+#sixbtn{ grid-area: sixbtn; }
+#sevenbtn{ grid-area: sevenbtn; }
+#eigthbtn{ grid-area: eigthbtn; }
+#ninebtn{ grid-area: ninebtn; }
+#decimalbtn{ grid-area: decimalbtn; }
+#addbtn{ grid-area: addbtn; }
+#subtractionbtn{ grid-area: subtractionbtn; }
+#multiplybtn{ grid-area: multiplybtn; }
+#dividebtn{ grid-area: dividebtn; }
+#equalbtn{ grid-area: equalbtn; }
+#deletebtn{ grid-area: deletebtn; }
+#clearbtn{ grid-area: clearbtn; }
